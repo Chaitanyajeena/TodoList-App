@@ -1,0 +1,49 @@
+@import "Color";
+
+nav {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+
+    .homebut {
+        >button {
+            background-color: orangered;
+            margin-right: 70px;
+            border-radius: 10px;
+            font: 500 1rem $text1;
+            width: 100px;
+            height: 7vh;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+
+    >h1 {
+        text-transform: uppercase;
+        color: orangered;
+    }
+
+    >main {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+
+        >a {
+            margin: 1rem;
+            color: $dark;
+
+            &:hover {
+                color: $third;
+            }
+        }
+    }
+}
